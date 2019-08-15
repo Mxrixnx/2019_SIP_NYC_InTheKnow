@@ -1,0 +1,40 @@
+
+
+.background {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background {
+  background-image: url("h1.jpg");
+  min-height: 3000px;
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+
+}
+#text1{
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color: 	#F0F8FF;
+  position:absolute;
+  left: 32px;
+  top: 90%;
+  width:95%;
+}
+#formsof{
+  padding:5px;
+  color:#146FA3;
+}
+h2{
+  font-weight:800;
+  color:#146FA3;
+}
