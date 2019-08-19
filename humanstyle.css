@@ -1,0 +1,158 @@
+* {
+}
+
+
+.background {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#firstpic {
+  background-image: url("h1.jpg");
+  min-height: 500px;
+  min-width:100%;
+}
+#secondpic{
+  background-image: url("h8.jpg");
+  min-height: 400px;
+}
+#thirdpic{
+  background-image: url("h9.jpg");
+  min-height: 400px;
+}
+
+#fourthpic{
+  background-image: url("h10.JPEG");
+  min-height: 400px;
+}
+#fifthpic{
+  background-image: url("h11.JPG");
+  min-height: 400px;
+}
+#sixthpic{
+  background-image: url("h12.JPG");
+  min-height: 400px;
+}
+#seventhpic{
+  background-image: url("h13.JPG");
+  min-height: 400px;
+}
+#eigthpic{
+  background-image: url("h14.JPG");
+  min-height: 400px;
+}
+
+.container{
+  height:100%;
+  width:100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+form {
+  flex: .33%;
+  padding: 5px;
+  width:5%;
+}
+body, html {
+  height: 100vh;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  overflow: hidden;
+
+}
+#text1{
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color: 	#F0F8FF;
+  position:absolute;
+  left: 32px;
+  top: 90%;
+  width:95%;
+}
+#formsof{
+  padding:5px;
+  color:#146FA3;
+}
+h2{
+  font-weight:600;
+  color:#ffffff;
+  padding:200px;
+  font-size: 40px;
+}
+.summ{
+  color:#000000;
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  padding: 5px;
+}
+.first{
+  padding-top:25px;
+  font-size: 35px;
+  font-weight:560;
+}
+.second{
+  font-weight:530;
+  font-size: 28px;
+  padding:3px;
+  color:#242537;
+}
+.third{
+  padding:3px;
+  font-size: 24px;
+  color:#242537;
+  font-family: serif;
+}
+.fourth{
+  padding:3px;
+  font-size: 18px;
+  color:#242537;
+}
+.box{
+  background-color: #ffffff;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  left:0px;
+
+}
+.pictures{
+  dispaly: inline-block;
+  width:170px;
+  height:230px;
+  padding:15px;
+  hover {opacity: 0.7;}
+}
+
+.column{
+  display:inline-flex;
+  padding:5px;
+  margin:15px;
+}
+#drugg{
+  font-family: serif;
+  font-weight:700px;
+  font-size: 25px;
+}
+#firstbox{
+  top:50px;
+}
+li {
+  left:25px;
+  list-style-type: circle;
+  border: 2px #000000;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #000000;
+    color: #fff;
+}
+.padding{
+  padding:5px;
+}
