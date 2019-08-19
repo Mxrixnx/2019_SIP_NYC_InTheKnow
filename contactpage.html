@@ -2,40 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="contactpage.css"/>
-  <link rel="stylesheet" href="slideshow.css"/>
-  <title> In The Know </title>
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
 </head>
-
 <body>
   <h3> </h3>
   <nav class="fill">
@@ -44,42 +11,10 @@ function showSlides(n) {
     <div id="navv">
       <li class = "fr"><a href="#">Human Trafficking</a></li>
       <li class="fr"><a href="#">Poverty</a></li>
-      <li class="fr"><a href="#">Police Brutality</a></li>
+      <li class="fr"><a class="active" href="scrollingparallax.html">Police Brutality</a></li>
     </div>
     </ul>
   </nav>
-
-
-  <div class="w3-center" Style="max-width:500px">
-    <img class="mySlides" src="image_ITK_12.jpg" style="width:2000px"  height="900px">
-    <img class="mySlides" src="image_ITK_13.jpg" style="width:2000px"  height="900px">
-    <img class="mySlides" src="image_ITK_18.jpg" style="width:2000px"  height="900px">
-
-  </div>
-
-  <script>
-  var myIndex = 0;0
-  carousel();
-
-  function carousel()  {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none" ;
-    }
-    myIndex++;
-    if(myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 1000); // change image 2 seconds
-  }
-
-  </script>
-
-
-
-
-
-
 
 
 </body>
