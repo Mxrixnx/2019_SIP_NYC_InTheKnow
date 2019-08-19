@@ -151,3 +151,11 @@ nav.fill ul li a:hover:after {
   padding: 20px;
   text-align; inline;
 }
+.site-footer {
+  background-color: #fff;
+  color: #000;
+}
+
+.site-footer a {
+  color: #000;
+}
