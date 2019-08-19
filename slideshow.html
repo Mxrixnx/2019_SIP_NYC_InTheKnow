@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+<head>
+  <link rel="stylesheet" href="cuco1.css">
+</head>
+<center>
+<div class="w3-center" Style="max-width:500px">
+  <img class="mySLides" src="image_ITK_12.jpg" style="width:100%">
+  <img class="mySlides" src="image_ITK_13.jpg" style="width:100%">
+  <img class="mySlides" src="image_ITK_14.jpg" style="width:50%">
+</center>
+</div>
+
+<script>S
+var myIndex = 0;
+carousel();
+
+function carousel()  {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none" ;
+  }
+  myIndex++;
+  if(myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 1000); // change image 2 seconds
+}
+
+</script>
+
+</html>
