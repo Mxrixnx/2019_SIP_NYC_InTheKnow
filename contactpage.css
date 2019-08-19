@@ -152,3 +152,10 @@ nav.fill ul li a:hover:after {
   padding: 20px;
   text-align; inline;
 }
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #000000;
+    color: #fff;
+}
