@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="contactpage.css"/>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+body{
+  background-color:#ffffff;
+}
+#imgg{
+height:6%;
+width:6%;
+padding:1px;
+display: inline-block;
+text-align: left;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+padding: 0;
+margin: 0;
+}
+
+small {
+font-size: 12px;
+color: rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+text-align: center;
+padding: 50px 0;
+font-weight: 800;
+margin: 0;
+letter-spacing: -1px;
+color: inherit;
+font-size: 40px;
+}
+
+
+.center {
+text-align: center;
+}
+
+ul{
+display: block;
+list-style-type: disc;
+margin-block-start: 0px;
+margin-block-end: 0px;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 0px;
+}
+
+/* NAVIGATION */
+.fr{
+float: right;
+padding:30px;
+}
+nav {
+width: 100%;
+
+background: #000000;
+padding: 0px ;
+box-shadow: 0px 5px 0px #dedede;
+}
+
+#navv{
+float:right;
+}
+nav div {
+list-style: none;
+}
+nav ul li {
+display: inline-block;
+}
+nav ul li a {
+display: block;
+text-decoration: none;
+color: #aaa;
+font-weight: 800;
+text-transform: uppercase;
+
+
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+transition: all .5s;
+}
+nav ul li a:hover {
+color: #555;
+}
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 0%;
+content: '.';
+color: transparent;
+background: #aaa;
+height: 1px;
+}
+nav.stroke ul li a:hover:after {
+width: 100%;
+}
+
+nav.fill ul li a {
+transition: all 2s;
+}
+
+nav.fill ul li a:after {
+text-align: left;
+content: '.';
+margin: 0;
+opacity: 0;
+}
+
+nav.fill ul li a:hover {
+color: #000000;
+z-index: 1;
+}
+nav.fill ul li a:hover:after {
+z-index: -10;
+animation: fill 1s forwards;
+-webkit-animation: fill 1s forwards;
+-moz-animation: fill 1s forwards;
+opacity: 1;
+}
+/* Keyframes */
+@-webkit-keyframes fill {
+0% {
+  width: 0%;
+  height: 1px;
+}
+50% {
+  width: 100%;
+  height: 1px;
+}
+100% {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+}
+#logo{
+width: 170px;
+height:70px;
+padding: 20px;
+text-align; inline;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("https://www.economist.com/sites/default/files/images/2018/09/articles/main/20180922_FNP502.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("https://cdn.dnaindia.com/sites/default/files/styles/full/public/2018/09/21/733785-698365-poorhouseholds-file-photo.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("https://i.pinimg.com/originals/da/eb/66/daeb6656ca98f0736312465c6d701e4a.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight:800
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
+<body>
+  <nav class="fill">
+    <ul>
+    <li><a href="home"><img id="logo" src="intheknow2.png"></a></img>
+    <div id="navv">
+      <li class = "fr"><a href="humantrafficking">Human Trafficking</a></li>
+      <li class="fr"><a href="poverty">Poverty</a></li>
+      <li class="fr"><a class=active href="contactpage_policebrutality">Police Brutality</a></li>
+    </div>
+    </ul>
+  </nav>
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:50px;">Poverty</span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">What does it mean to experience poverty?</h3>
+  <p><span class="border" style="background-color:white;font-size:20px;">Families and their children experience poverty when they are unable to achieve a minimum, decent standard of living that allows them to participate fully in mainstream society.These non-material resources provide families with the means to get by, and ultimately, to get ahead.Poverty also involves homeless people and hunger.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+      <h3 style="text-align:center;">How can we stop proverty?</h3>
+  <p><span class="border" style="background-color:transparent;font-size:20px;">It can also improve health and welfare by providing access to clean water and better sanitation, create new jobs and teach developing countries to be more sustainable. Microfinancing continues to prove that even the smallest amounts of credit can be one of the many solutions to global poverty. </p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3 style="text-align:center;">Organizations Working Against Police Brutality</h3>
+  <p>People all over the world is working hard to fight against police brutality. Here are a few organizations that you can be apart of and help to support by donating to them.</p>
+  <ul style="list-style-type:circle;">
+    <li><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjBqPOhoo_kAhUBi8gKHdGUB3EYABAAGgJxdQ&ohost=www.google.com&cid=CAESEeD2CeBkHDVoJizOBExLXkJe&sig=AOD64_2BLy6FGWbshCdPx3tSJVnaR7jpRQ&q=&ved=2ahUKEwjXwuyhoo_kAhXOMd8KHSsLAE0Q0Qx6BAgOEAE&adurl="> Baltimore United For Change</a>
+      <li><a href="https://donate.worldvision.org/gift-catalog/poverty-in-america/">Donate to Baltimore United For Change</a>
+    </li>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border"style="background-color:transparent;font-size:50px;">Inform overs about Proverty</span>
+  </div>
+</div>
+<footer>
+  <div class="padding">
+  <p>© 2019 In The Know </p>
+  </div>
+  <div class="padding">
+  <p id="names"> MARIANA KEILY ASHLEY</p>
+</div>
+</footer>
+
+</body></html>
