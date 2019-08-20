@@ -1,17 +1,48 @@
 <!DOCTYPE>
 <html>
 <head>
-  <link rel="stylesheet" href="cuco1.css">
+  <link rel="stylesheet" href="contactpage.css">
+  <link rel="stylesheet" href="slideshow.css">
+  <script src="htrafficking.js"></script>
 </head>
-<center>
-<div class="w3-center" Style="max-width:500px">
-  <img class="mySLides" src="image_ITK_12.jpg" style="width:100%">
-  <img class="mySlides" src="image_ITK_13.jpg" style="width:100%">
-  <img class="mySlides" src="image_ITK_14.jpg" style="width:50%">
-</center>
-</div>
+<body>
+  <nav class="fill">
+    <ul>
+      <li><a href="home"><img id="logo" src="intheknow2.png"></img></a></li>
+    <div id="navv">
+      <li class = "fr"><a href="#">Human Trafficking</a></li>
+      <li class="fr"><a href="#">Poverty</a></li>
+      <li class="fr"><a href="#">Police Brutality</a></li>
+    </div>
+    </ul>
+  </nav>
+  <div class="slideshow-container">
 
-<script>S
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade" class="hero-image" id="onee"></div>
+
+    <div class="mySlides fade" class="hero-image" id="twoo"></div>
+
+    <div class="mySlides fade"class="hero-image" id="three"></div>
+
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div class="dotts" style="text-align:center">
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+
+  </div>
+
+  <div class="aboutus">
+    <center><p class="first">Our mission</p></center>
+    <center><p class="second">Our mission at In The Know is to enlighten people and spark change by bringing to light issues that aren't covered as much in the media.</p></center>
+    <center><p class="second">In our website we currently focus on three main topics which are Human Trafficking, Poverty and Police Britality. We chose these three topics because these issues have lost media attention in the past couple of yeas. We have yet to add mor information for each page, but in each page we have included other websites you can visit to learn more or donate. If you decide not to donate, we ask you to spread awareness for these issues.</p></center>
+  </div>
+
+<script>
 var myIndex = 0;
 carousel();
 
@@ -24,9 +55,17 @@ function carousel()  {
   myIndex++;
   if(myIndex > x.length) {myIndex = 1}
   x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 1000); // change image 2 seconds
+  setTimeout(carousel, 10000); // change image 2 seconds
 }
 
 </script>
-
+  <footer>
+    <div class="padding">
+    <p>© 2019 In The Know</p>
+    </div>
+    <div class="padding">
+    <p id="names"> MARIANA KEILY ASHLEY</p>
+  </div>
+  </footer>
+</body>
 </html>
