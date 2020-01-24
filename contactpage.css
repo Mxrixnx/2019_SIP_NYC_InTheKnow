@@ -176,6 +176,7 @@ footer {
     background-size: cover;
     position: relative;
     opacity: 100;
+  
 }
 #three{
     background-image: linear-gradient(rgba(0, 0, 0.5, 0.5), rgba(0, 0, 0, 0.5)), url("h10.jpeg");
@@ -185,4 +186,7 @@ footer {
     background-size: cover;
     position: relative;
     opacity: 100;
+}
+.slideshowcontainer{
+  padding-top: 10px;
 }
